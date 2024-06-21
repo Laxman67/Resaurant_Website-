@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-scroll';
-import { HiOutlineMenu } from 'react-icons/hi';
+import { GiHamburgerMenu } from 'react-icons/gi';
 import { data } from '../restApi.json';
 
 const Navbar = () => {
@@ -26,7 +26,7 @@ const Navbar = () => {
       </div>
 
       <div className="hamburger" onClick={() => setShow(!show)}>
-        <HiOutlineMenu />
+        <GiHamburgerMenu />
       </div>
     </nav>
   );
