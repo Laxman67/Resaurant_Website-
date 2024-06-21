@@ -3,7 +3,7 @@ import About from '../components/About';
 const Home = () => {
   return (
     <>
-    <h1>TOP</h1>
+    <h1>SUCCESS</h1>
       <HeroSection />
       <About/>
     </>
