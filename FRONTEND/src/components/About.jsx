@@ -19,13 +19,13 @@ const About = () => {
           </p>
           <Link to="/"> 
           Explore Menu <span>
-            <HiOutlineArrowNarrowRight/>
+            <HiOutlineArrowNarrowRight style={{width:"20px"}}/>
           </span>
 
           </Link>
         </div>
         <div className="banner">
-            <img src="/about.png" alt="about"  />
+            <img src="/about.png" alt="about"   />
         </div>
       </div>
     </section>
