@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { Link } from 'react-scroll';
-import { GiHamburgerMenu } from 'react-icons/gi';
-import { data } from '../restApi.json';
+import React, { useState } from "react";
+import { Link } from "react-scroll";
+import { GiHamburgerMenu } from "react-icons/gi";
+import { data } from "../restApi.json";
 
 const Navbar = () => {
   const [show, setShow] = useState(false);
   return (
     <nav>
-      <div className="logo">EatWell</div>
-      <div className={show ? 'navlinks showmenu' : 'navlinks'}>
+      <div className="logo">Delight Food</div>
+      <div className={show ? "navlinks showmenu" : "navlinks"}>
         <div className="links">
           {data[0].navbarLinks.map((element) => {
             return (
@@ -18,7 +18,9 @@ const Navbar = () => {
                 spy="true"
                 smooth="true"
                 duration={500}
-              ></Link>
+              >
+                {element.title}
+              </Link>
             );
           })}
         </div>
