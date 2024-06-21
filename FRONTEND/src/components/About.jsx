@@ -25,7 +25,7 @@ const About = () => {
           </Link>
         </div>
         <div className="banner">
-            <img src="/about.png" alt="about" style={{minWidth:"500px",maxWidth:"500px"}}  />
+            <img src="/about.png" alt="about"  />
         </div>
       </div>
     </section>
