@@ -5,18 +5,20 @@ const Qualities = () => {
     <section className="qualities" id="qualities">
       <div className="container">
         {
-          data[0].ourQualities.map(element=>(
-            <div className="card" key={element.id}>
-              <img src={element.image} alt={element.title}  />
-              <p className="titl">
-                {element.title}
-
-              </p>
-              <div className="description">
-                {element.description}
+          data[0].ourQualities.map(element=>{
+            return (
+              <div className="card" key={element.id}>
+                <img src={element.image} alt={element.title}  />
+                <p className="titl">
+                  {element.title}
+  
+                </p>
+                <div className="description">
+                  {element.description}
+                </div>
               </div>
-            </div>
-          ))
+            )
+          })
         }
       </div>
     </section>
