@@ -22,12 +22,8 @@ const reservationSchema = new mongoose.Schema({
   phone: {
     type: String,
     required: true,
-    validate: {
-      validator: function (v) {
-        return validator.isMobilePhone(v, 'any', { strictMode: false });
-      },
-      message: 'Provide a valid 10-digit phone number',
-    },
+    minLength: [10, "Phone number must contain 11 Digits."],
+    maxLength: [10, "Phone number must contain 11 Digits."],
   },
   time: {
     type: String,

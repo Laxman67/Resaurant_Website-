@@ -10,6 +10,7 @@ dotenv.config({ path: './config/config.env' });
 
 app.use(
   cors({
+        // origin:["https://studious-fiesta-xqvpgv56wp5frww-5173.app.github.dev/"],
     origin: [process.env.FRONTEND_URL], //what to connect with backend
     methods: ['POST'], // we want to post to frontend
     credentials: 'true',
