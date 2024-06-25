@@ -3,6 +3,18 @@ import Reservation from '../model/reservationSchema.js';
 
 export const sendReservation = async (req, res, next) => {
   const { firstName, lastName, email, phone, date, time } = req.body;
+  /*
+  ************TO DEBUG*******
+  let obj = {
+    firstName: firstName,
+    lastName: lastName,
+    email: email,
+    phone: phone,
+    date: date,
+    time: time,
+  };
+  console.log(`Details of Submitted form: ${Object.values(obj)}`);
+  */
 
   if (!firstName || !lastName || !email || !phone || !date || !time) {
     return next(new ErrorHandler('Please fill full reservation form', 400));
